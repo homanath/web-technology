@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>project2</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    th, td {
+        height: 30px;
+    }
+
+    #main {
+        width: 90vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: aliceblue;
+    }
+    .vertical-text {
+        font-size: 1.5rem;
+        border: 3px solid black;
+        writing-mode: vertical-rl;
+        transform: scaleY(1);
+        letter-spacing: 2px;
+        white-space: nowrap
+
+    }
+    tbody > tr:not(:nth-child(-n+3)) > th {
+    border: 3px solid black;
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="main">
+    <table>
+        <tbody>
+        
+            <!-- Row 1 -->
+            <tr>
+                <!-- Columns -->
+                <th colspan="2">Time</th>
+                <th>7:<sup>30</sup> - 8:<sup>00</sup></th>
+                <th>8:<sup>00</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+                <th>7:<sup>30</sup> - 8:<sup>30</sup></th>
+            </tr>
+
+            <!-- row 2 -->
+            <tr>
+                <th colspan="2">Duration</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+                <th>30m</th>
+            </tr>
+
+            <!-- row3 -->
+            <tr>
+                <th colspan="2">Period</th>
+                <th>0</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>0</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+            </tr>
+
+            <!-- Monday  -->
+            <!-- row 4 -->
+            <tr style="border-top: 3px solid black;">
+                <th rowspan="3">Mon</th>
+                <th>4</th>
+                <th rowspan="15" class="vertical-text">Assembly & Registration in Class</th>
+                <td colspan="2" rowspan="3">Mathematics</td>
+                <td colspan="2" rowspan="3"style="border-left:2px solid black;">Creative & Design</td>
+                <th rowspan="15" class="vertical-text" style="border-right:3px solid black;">Break</th>
+                <td rowspan="3"style="border-right:2px solid black;">Computing</td>
+                <td rowspan="3" colspan="2" style="border-right:3px solid black;">TWI</td>
+            </tr>
+
+            <tr>
+                <th>5</th>
+                                
+                
+            </tr>
+
+            <tr>
+                <th>6</th>
+                
+            </tr>
+
+
+            <!-- tuesday -->
+            <tr style="border-top: 3px solid black;">
+                <th rowspan="3">Tue</th>
+                <th>4</th>
+                <td colspan="2" rowspan="3">English Language</td>
+                <td colspan="2"  rowspan="3"style="border-left: 2px solid black;"> Twi</td>
+                <td rowspan="3" style="border-right:2px solid black;">RME</td>
+                <td colspan="2" rowspan="3"style="border-right: 3px solid black;">OWOP</td>
+            </tr>
+            <tr>
+                <th>5</th>  
+            </tr>
+
+            <tr>
+                <th>6</th> 
+            </tr>
+
+            <!-- wednesday -->
+            <tr style="border-top: 3px solid black;">
+                <th rowspan="3">Wed</th>
+                <th>4</th>
+                <td colspan="2" rowspan="3" style="border-left: 2px solid black;">English Language</td>
+                <td colspan="2" rowspan="3" style="border-left: 2px solid black;">Creative Arts & Design</td>
+                <td rowspan="3"style="border-right:2px solid black;">History</td>
+                <td colspan="2" rowspan="3"style="border-right: 3px solid black;">RME</td>
+            </tr>
+            <tr>
+                <th>5</th>   
+            </tr>
+            <tr>
+                <th>6</th>  
+            </tr>
+
+            <!-- thurs -->
+            <tr style="border-top: 3px solid black;">
+                <th rowspan="3">Thurs</th>
+                <th>4</th>
+                <td colspan="2"rowspan="3">English Language</td>
+                <td colspan="2"rowspan="3" style="border-left: 3px solid black;">Science</td>
+                <td rowspan="3" style="border-right:2px solid black;">OWOP</td>
+                <td colspan="2" rowspan="3"style="border-right: 3px solid black;">Computing</td>
+            </tr>
+            <tr>
+                <th>5</th>
+            </tr>
+            <tr>
+                <th>6</th>
+                </tr>
+
+            <!-- fri -->
+            <tr style="border-top: 3px solid black;">
+                <th rowspan="3">Fri</th>
+                <th>4</th>
+                <td colspan="2" rowspan="3">Science</td>
+                <td colspan="2"rowspan="3" style="border-left: 3px solid black;">Mathematics</td>
+                <td rowspan="3"style="border-right:2px solid black;">History</td>
+                <td colspan="2" rowspan="3"style="border-right: 3px solid black;">English Language</td>
+            </tr>          
+            <tr>
+                <th>5</th>               
+            </tr>
+            <tr style="border-bottom: 3px solid black;">
+                <th>6</th>
+            </tr>
+        </body>
+    </table>
+</body>
+</html>
