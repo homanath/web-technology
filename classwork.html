@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+                .container-main{
+            background-color: rgb(238, 230, 230);
+            width: 30%;
+            /* height: 400px; */
+            margin: auto;
+            border-radius: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-main">
+    <h1>My feedback form</h1>
+    <form action="">
+        <ul>
+        <li><label for="name">Name</label>
+        <input type="text"name="name" placeholder="Enter your name"><br></li><br>
+        <li><label for="email">Email</label>
+        <input type="text" name="email" placeholder="Enter your email"><br></li><br>
+        <li><label for="pass">Password</label>
+        <input type="text" name="pass" placeholder="Enter your password"></li><br>
+       <li>
+          Please check all the emotion that apply to you: <br>
+          <ul>
+            <li><label for="emotion">Angry</label>
+            <input type="radio"  name="emotion" ><br></li>
+            <li><label for="emotion">Sad</label>
+            <input type="radio"  name="emotion" ><br></li>
+            <li><label for="emotion">Happy</label>
+            <input type="radio"  name="emotion" ><br></li>
+            <li><label for="emotion">Ambivalent</label>
+            <input type="radio"  name="emotion" ><br></li><br>
+          </ul>
+       </li>
+       <li>How satisfied were you with our service?
+        <ul>
+            <li><label for="emotion">Very Stisfied</label>
+            <input type="checkbox"  name="emotion" ><br></li>
+            <li><label for="emotion">Satisfied</label>
+            <input type="checkbox"  name="emotion" ><br></li>
+            <li><label for="emotion">Didn't care</label>
+            <input type="checkbox"  name="emotion" ><br></li>
+            <li><label for="emotion">Dissatisfied</label>
+            <input type="checkbox"  name="emotion" ><br></li>
+            <li><label for="emotion">Very dissatisfied</label>
+                <input type="checkbox"  name="emotion" ><br></li><br>
+          </ul>
+       </li>
+       <ul type="circle">
+        <li><label for="comment"> Further comment</label>
+        
+                <textarea name="message" rows="5" cols="15"></textarea></li>
+                <br><br></ul> 
+                <label for="image">Bio photo:</label>
+                <input type="file" id="image" name="image"><br><br>
+                <ul type="circle">
+                    <li>
+                <label for="Location">Location visited</label>
+                <select id="Location" name="Location">
+                    <option value="">  Select location</option>
+            
+                  <option value="">KTM</option>
+                  <option value="">Jhapa</option>
+                  <option value="">itahari</option>
+                  <option value="">morang</option>
+                </select><br><br></ul></li>
+                <ul type="circle">
+            
+            <li>    <input type="submit">
+            </li>  
+     </form>
+</div>
+</ul>
+</body>
+</html>
