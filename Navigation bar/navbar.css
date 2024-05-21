@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+
+}
+body{
+    background-color: aqua;
+}
+#navbar{
+    background-color:grey;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar li{
+    color: whitesmoke;
+    list-style-type: none;
+    /* margin: ; */
+}
+
+#content{
+    background-color: red;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sub-content{
+    background-color: orange;
+    width: 80px;
+    height: 80px;
+}

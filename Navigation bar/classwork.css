@@ -1,0 +1,21 @@
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 0px 30px; */
+}
+.menu{
+  padding: 7px;
+  display: flex;
+  list-style-type: none;
+  
+}
+.menu li{
+  margin: 0px 5px 0px 5px;
+}
+.starter{
+  background-color:rgb(90, 68, 214);
+  border-radius: 5px;
+  padding: 7px;
+}
+
