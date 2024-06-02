@@ -1,0 +1,219 @@
+/* General Styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+} */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #d4d4d4;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo{
+    display: flex;
+    margin: 0;
+    padding: 0px 45px;
+}
+
+.logo p{
+    position: relative;
+    top: 10px;
+    color: black;
+    font-size: 45px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.navbar .logo img{
+    height: 60px;
+    width: 60px;
+}
+
+.nav-links {
+    width: 30%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+.nav-links a {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: #28b800;
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
+.signup-btn {
+    background: #ff6b6b;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url(./images/image.png);
+    background-color: rgba(224, 218, 218, 0.1);
+    color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.course-item img{
+    height: 400px;
+    width: 700px;
+   background-size: cover;
+}
+
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: white;
+    margin: 1rem 0;
+}
+
+.cta-btn {
+    background: #ff6b6b;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+/* About Section Styles */
+.about {
+    padding: 2rem 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 1rem;
+}
+
+/* Courses Section Styles */
+.courses {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.course-grid {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* gap: 1rem; */
+    /* justify-content: center; */
+}
+
+.course-item {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    overflow: hidden;
+    margin: 0px 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 2rem 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.contact button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background: #cccaca;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links li {
+        display: block;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    .course-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
